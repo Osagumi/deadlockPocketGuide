@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  , serif, sans-serif;
+  color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: #020404;
+}
+
+header {
+  text-align: center;
+  font-family: 'Courier New', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  background-color: rgba(10, 10, 15, 0.7);
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header input {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background: rgba(20, 20, 30, 0.8);
+  color: #eee;
+  width: 350px;
+  margin-top: 12px;
+  font-size: 1.1em;
+}
+
+
+/* Panel expandido */
+.tip-section {
+  display: flex;
+  flex-direction: row;
+  background: rgba(0,0,0,0.6); /* opcional para contraste */
+  border-radius: 2px;
+  align-items:normal;
+  gap: 100px;
+  font-size: 20px;
+  padding-left: 200px;
+  padding-right: 200px;
+
+    /* Imagen de fondo */
+  background-image: url('../img/City_buildings_BW.png'); /* ruta correcta */
+  background-size: cover;       /* ocupa todo el espacio */
+  background-position: 100%;  /* centrada */
+  background-repeat: no-repeat; 
+}
+
+/* Columna izquierda */
+.tip-text {
+  flex-direction: column;
+  justify-content: right;
+  font-size: 13.0rem;
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+  
+}
+
+#tip-image {
+  position:relative;
+  top: 20px;           /* sube el retrato sobre el borde */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: auto;
+  border-radius: 11%;
+  border: 1px solid #fff;
+  border-style:solid;
+  background-color: #00000062;
+}
+
+/* Imagen del nombre (debajo del retrato) */
+#tip-name-image {
+  display: block;
+  position: relative;
+  top: 25px;           /* un poco más abajo del retrato */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;        /* tamaño fijo que se vea bien */
+  max-width: 90%;      /* no se pase del contenedor */
+  height: auto;
+  object-fit: contain;
+  background-color: transparent;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 24px;
+  max-width: 800px;
+  width: 100%;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.icon-card {
+  text-align: center;
+  cursor: pointer;
+}
+
+.icon-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  border: 2px solid rgb(255, 255, 255);
+  transition: transform 0.2s;
+}
+
+.icon-card img:hover {
+  transform: scale(1.05);
+}
+
+.spacer
+{
+  flex: 0; /* ocupa el espacio restante */
+}
+
+
+/* Espaciado entre tips y counters */
+.tip-body ul li {
+  margin-bottom: 10px;   /* ajusta según el espacio que quieras */
+  line-height: 1.4em;    /* opcional, para mejorar lectura */
+}

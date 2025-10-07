@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pocket Guide...</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Deadlock Pocket Guide</h1>
+  <input type="text" id="search" placeholder="Buscar personaje...">
+</header>
+
+<!-- Sección de retrato expandida -->
+<div id="tip-section" class="tip-section" style="display:none;">
+  <div class="tip-info">
+    <img id="tip-image" src="" alt="Render del personaje">
+    <img id="tip-name-image" src="" alt="Nombre del personaje" class="name-image">
+    
+    <div class="tip-header">
+      <p id="tip-role" class="muted"></p>
+    </div>
+
+    
+    <div class="tip-body">
+      <div class="tips-block">
+        <h3>Tips</h3>
+        <ul id="tip-list"></ul>
+      </div>
+
+      <div class="counters-block">
+        <h3>Counters</h3>
+        <ul id="counter-list"></ul>
+      </div>
+    </div>
+  </div>
+
+  
+  
+</div>
+
+
+<!-- Grid de iconos -->
+<div class="grid">
+    <div class="icon-card" data-name="Abrams" data-img="img/Abrams.png" data-portrait="img/Abrams_card.png"><img src="img/Abrams.png" alt="Abrams"></div>
+    <div class="icon-card" data-name="Bebop" data-img="img/Bebop.png" data-portrait="img/Bebop_card.png"><img src="img/Bebop.png" alt="Bebop"></div>
+    <div class="icon-card" data-name="Billy" data-img="img/Billy.png" data-portrait="img/Billy_card.png"><img src="img/Billy.png" alt="Billy"></div>
+    <div class="icon-card" data-name="Calico" data-img="img/Calico.png" data-portrait="img/Calico_card.png"><img src="img/Calico.png" alt="Calico"></div>
+    <div class="icon-card" data-name="Drifter" data-img="img/Drifter.png" data-portrait="img/Drifter_card.png"><img src="img/Drifter.png" alt="Drifter"></div>
+    <div class="icon-card" data-name="Dynamo" data-img="img/Dynamo.png" data-portrait="img/Dynamo_card.png"><img src="img/Dynamo.png" alt="Dynamo"></div>
+    <div class="icon-card" data-name="Grey Talon" data-img="img/Grey_Talon.png" data-portrait="img/Grey_Talon_card.png"><img src="img/Grey_Talon.png" alt="Grey Talon"></div>
+    <div class="icon-card" data-name="Haze" data-img="img/Haze.png" data-portrait="img/Haze_card.png"><img src="img/Haze.png" alt="Haze"></div>
+    <div class="icon-card" data-name="Holliday" data-img="img/Holliday.png" data-portrait="img/Holliday_card.png"><img src="img/Holliday.png" alt="Holliday"></div>
+    <div class="icon-card" data-name="Infernus" data-img="img/Infernus.png" data-portrait="img/Infernus_card.png"><img src="img/Infernus.png" alt="Infernus"></div>
+    <div class="icon-card" data-name="Ivy" data-img="img/Ivy.png" data-portrait="img/Ivy_card.png"><img src="img/Ivy.png" alt="Ivy"></div>
+    <div class="icon-card" data-name="Kelvin" data-img="img/Kelvin.png" data-portrait="img/Kelvin_card.png"><img src="img/Kelvin.png" alt="Kelvin"></div>
+    <div class="icon-card" data-name="Lady Geist" data-img="img/Lady_Geist.png" data-portrait="img/Lady_Geist_card.png"><img src="img/Lady_Geist.png" alt="Lady Geist"></div>
+    <div class="icon-card" data-name="Lash" data-img="img/Lash.png" data-portrait="img/Lash_card.png"><img src="img/Lash.png" alt="Lash"></div>
+    <div class="icon-card" data-name="McGinnis" data-img="img/McGinnis.png" data-portrait="img/McGinnis_card.png"><img src="img/McGinnis.png" alt="McGinnis"></div>
+    <div class="icon-card" data-name="Mina" data-img="img/Mina.png" data-portrait="img/Mina_card.png"><img src="img/Mina.png" alt="Mina"></div>
+    <div class="icon-card" data-name="Mirage" data-img="img/Mirage.png" data-portrait="img/Mirage_card.png"><img src="img/Mirage.png" alt="Mirage"></div>
+    <div class="icon-card" data-name="Mo & Krill" data-img="img/Mo_Krill.png" data-portrait="img/Mo_&_Krill_card.png"><img src="img/Mo_&_Krill.png" alt="Mo & Krill"></div>
+    <div class="icon-card" data-name="Paige" data-img="img/Paige.png" data-portrait="img/Paige_card.png"><img src="img/Paige.png" alt="Paige"></div>
+    <div class="icon-card" data-name="Paradox" data-img="img/Paradox.png" data-portrait="img/Paradox_card.png"><img src="img/Paradox.png" alt="Paradox"></div>
+    <div class="icon-card" data-name="Pocket" data-img="img/Pocket.png" data-portrait="img/Pocket_card.png"><img src="img/Pocket.png" alt="Pocket"></div>
+    <div class="icon-card" data-name="Seven" data-img="img/Seven.png" data-portrait="img/Seven_card.png"><img src="img/Seven.png" alt="Seven"></div>
+    <div class="icon-card" data-name="Shiv" data-img="img/Shiv.png" data-portrait="img/Shiv_card.png"><img src="img/Shiv.png" alt="Shiv"></div>
+    <div class="icon-card" data-name="Doorman" data-img="img/Doorman.png" data-portrait="img/The_Doorman_card.png"><img src="img/The_Doorman.png" alt="Doorman"></div>
+    <div class="icon-card" data-name="Sinclair" data-img="img/Sinclair.png" data-portrait="img/Sinclair_card.png"><img src="img/Sinclair.png" alt="The Magnificent Sinclair"></div>
+    <div class="icon-card" data-name="Victor" data-img="img/Victor.png" data-portrait="img/Victor_card.png"><img src="img/Victor.png" alt="Victor"></div>
+    <div class="icon-card" data-name="Vindicta" data-img="img/Vindicta.png" data-portrait="img/Vindicta_card.png"><img src="img/Vindicta.png" alt="Vindicta"></div>
+    <div class="icon-card" data-name="Viscous" data-img="img/Viscous.png" data-portrait="img/Viscous_card.png"><img src="img/Viscous.png" alt="Viscous"></div>
+    <div class="icon-card" data-name="Vyper" data-img="img/Vyper.png" data-portrait="img/Vyper_card.png"><img src="img/Vyper.png" alt="Vyper"></div>
+    <div class="icon-card" data-name="Warden" data-img="img/Warden.png" data-portrait="img/Warden_card.png"><img src="img/Warden.png" alt="Warden"></div>
+    <div class="icon-card" data-name="Wraith" data-img="img/Wraith.png" data-portrait="img/Wraith_card.png"><img src="img/Wraith.png" alt="Wraith"></div>
+    <div class="icon-card" data-name="Yamato" data-img="img/Yamato.png" data-portrait="img/Yamato_card.png"><img src="img/Yamato.png" alt="Yamato"></div>
+</div>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
